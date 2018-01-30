@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(Apple_Laptop_Wallpaper.jpg) no-repeat;
+	background-size: cover;
+}
+.box{
+	width: 450px;
+	background: rgba(0,0,0,0.8);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+    border-radius: 60%;
+    width: 200px;
+    height: 200px;
+}
+.box h1{
+	font-size: 40px;
+	letter-spacing: 4px;
+	font-weight: 100;
+	color: #da552f;
+}
+.box h4{
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+.box p{
+	text-align: justify;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+ul li{
+	list-style: none;
+	float: left;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background: #131418;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	color:  #262626;
+	font-size: 50px;
+	z-index: 1;
+	transition: .5s ease-in-out;
+
+}
+ul li:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ccc;
+	z-index: -1;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: .3s ease-in-out;
+}
+ul li:after
+{
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	right: -100%;
+	top: 0;
+	background: rgba(255,255,255,.3);
+	transition: .5s ease-in-out;
+	transition-delay: .3s;
+}
+ul li:hover:before{
+	left: 0%;
+	transform: scale(.9);
+}
+ul li:hover:after{
+	right: 0%;
+	
+}
+
+ul li:nth-child(1):before {
+	background: #3b5999;
+}
+ul li:nth-child(2):before {
+ 	background:  #55acee;
+}
+ul li:nth-child(3):before {
+ 	background:  #dd4b39;
+}
+ul li:nth-child(4):before {
+ 	background:  #0077B5;
+}
+ul li:nth-child(5):before
+{
+	background: #34465d;
+}
+ul li:hover:a{
+	color: #fff;
+}
+ul li .fa{
+	transition: .3s ease-in-out;
+}
+ul li:hover .fa
+{
+	color: #fff;
+}
